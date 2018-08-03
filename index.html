@@ -4,7 +4,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--Favicon-->
 <link rel="stylesheet" href="https://s8.postimg.cc/m4ya0y9ed/cool.png" />
 
 </head>
@@ -12,6 +11,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!-- pop up boxes -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 <body>
 
@@ -22,10 +27,12 @@
 
 <!-- Menu Bar -->
     <div class="w3-right w3-hide-small">
-      <a href="#information" class="w3-bar-item w3-button">Information</a>
-      <a href="#games" class="w3-bar-item w3-button">Games</a>
-      <a href="#maps" class="w3-bar-item w3-button">Maps</a>
-      <a href="#about" class="w3-bar-item w3-button">About Us</a>
+      <a href="#information" class="w3-bar-item w3-button" style="text-decoration:none;">Information</a>
+      <a href="#facts" class="w3-bar-item w3-button" style="text-decoration:none;">Fun Facts</a>
+      <a href="#games" class="w3-bar-item w3-button" style="text-decoration:none;">Games</a>
+      <a href="#quickguides" class="w3-bar-item w3-button" style="text-decoration:none;">Quick Guides</a>
+      <a href="#maps" class="w3-bar-item w3-button" style="text-decoration:none;">Maps</a>
+      <a href="#about" class="w3-bar-item w3-button" style="text-decoration:none;">About Us</a>
     </div>
   </div>
 </div>
@@ -38,33 +45,29 @@
   </div>
 </header>
 
-
 <!-- Information Section -->
   <div class="w3-content w3-padding" style="max-width:1564px">
   <div class="w3-container w3-padding-32" id="information">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Information</h3>
 
-    <h5>Our Mission</h5>
+    <h5><strong>Our Mission</strong></h5>
 
 <!--Read More Button -->
-    <p>We noticed that at any location, ranging from our schools, public parks, our parents’ companies, and even Amazon the trash cans for various functions are treated the same. With the same items inside although they have very different functions.<span id="dots">..</span>
-      <span id="more">Our goal is to educate people on the consequences of sorting items incorrectly while providing them clear guidelines on where to place items. We hope this website will prevent you from ever having to stand awkwardly in front of the trash cans again and having to impulsively make a random decision.
-        We want others to understand where to put what items without having to break a sweat, in addition, understand the power and impact on the environment you have just from where you decide to throw your post-lunch trash!.</span></p>
-    <button onclick="myfunction()" id="readmore">Read more</button>
-    <p class="w3-border-bottom w3-border-white w3-padding-10"></p>
+    <p>We noticed that at any location, ranging from our schools, public parks, our parents’ companies, and even Amazon, the trash cans for various functions are treated the same. With the same items inside although they have very different functions.<span id="dots">..</span>
+      <span id="more">Our goal is to educate people on the consequences of sorting items incorrectly while providing them clear guidelines on where to place items. We hope this website will prevent you from ever having to stand awkwardly in front of the trash cans again, and having to impulsively make a random decision.
+        We want others to understand where to put  items without having to break a sweat, in addition, understand the power and impact on the environment you have just from where you decide to throw your post-lunch trash!</span></p>
+    <button onclick="myfunction()" id="readmore"> Read more </button>
+    <h3 class="w3-border-bottom w3-border-white w3-padding-12 w3-light-grey w3-block w3-opacity"></h3>
 
 
   <h6>Click on an image to learn more about each category.</h6>
-<!-- Three columns -->
+<!-- Three columns for Images -->
   <div class="row">
-    <div class="column" onclick="openTab('b1');"> <span style="cursor:pointer"><center><img src="https://s8.postimg.cc/o7i2166kl/compost_N.jpg" alt="compost" class="img" style = "width:425px" "height:255px"></center></span><br>
-
-
+    <div class="column" onclick="openTab('b1');">
+      <span style="cursor:pointer"><center><img src="https://s8.postimg.cc/o7i2166kl/compost_N.jpg" alt="compost" class="img" style = "width:425px" "height:255px"></center></span><br>
     </div>
     <div class="column" onclick="openTab('b2');">
       <span style="cursor:pointer"><center><img src="https://s8.postimg.cc/b3chof9d1/recycle_N.jpg" alt="recycling" class="img" style = "width:425px" "height:255px"></center></span><br>
-
-
     </div>
     <div class="column" onclick="openTab('b3');">
       <span style="cursor:pointer"><center><img src="https://s8.postimg.cc/7l0hrky1x/trashcans_N.jpg" alt="trash" class="img" style = "width:425px" "height:255px"></center></span><br>
@@ -76,7 +79,6 @@
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
 <!--Composting Section-->
-
     <h2>Compost</h2>
     <img src= "https://livegreenlansing.org/wp-content/uploads/2016/10/ScrapstoSoil_Graphic-2.png" width=400 height=400 align="right" border=10px>
     <h3> What is it? </h3>
@@ -97,15 +99,11 @@
       </ul>
     </ul>
 
-
-
-    <h3><li>Golden Rule: compost is almost anything that has been alive and can be broken down by bacteria or other living things (excluding cooked food)</li></h3>
-    <img src="https://s8.postimg.cc/6ykf4tjh1/imageedit_2_7929507803.png" align="center" border="10px" height="75%" width="75%">
+    <h3><li><b>Golden Rule:</b> compost is almost anything that has been alive and can be broken down by bacteria or other living things (excluding cooked food)</li></h3>
+    <img src="https://s8.postimg.cc/6ykf4tjh1/imageedit_2_7929507803.png" align="center" border="10px" height="75%" width="75%" >
     <p> For a full list of compostable items: <a href= "https://www.smallfootprintfamily.com/100-things-you-can-compost" target="_blank" >click here</a></p>
 
   </div>
-
-<!-- align="right" border="10px" -->
 
 <!--Recycling Section -->
   <div id="b2" class="containerTab" style="display:none;background:#9eb6b8">
@@ -144,10 +142,9 @@
 
         </ul>
     </ul>
-    <img src="https://s8.postimg.cc/4v9zwq445/imageedit_1_2753698572.png" align="center" border="10px" height="65%" width="65%" padding-left="100px">
+    <img src="https://s8.postimg.cc/4v9zwq445/imageedit_1_2753698572.png" align="center" border="10px" height="68%" width="68%" padding-left=150px>
     <p>
-    <p>
-    </p>
+    <p></p>
     </p>
   </div>
 
@@ -175,11 +172,43 @@
     </ul>
   </div>
 
+<!-- Pop Quiz Section -->
+  <div id=popQuiz>
+    <center>
+    <div class="alert alert-success alert dimissible fade in" id="hotChoc" align= "left" style="width:25%">
+      <a href="h" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcWP-QRsuwWRBDu8FenlTOwPH-8PgayqcFyBQ0su_r12U0oQ/viewform?embedded=true" width="300" height="220" frameborder="0" marginheight="0" marginwidth="0" padding-top="20px">Loading...</iframe></center>
+    </div>
+    <div class="alert alert-success alert dimissible fade in" id="utensils" align= "left" style="width:25%">
+      <a href="h" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2DqUGxU_haXwodhkB2na-g4YU2c4srwL0H5fHgCCjVTHfOQ/viewform?embedded=true" width="300" height="220" frameborder="0" marginheight="0" marginwidth="0" padding-top="20px">Loading...</iframe></center>
+    </div>
+    <div class="alert alert-success alert dimissible fade in" id="sugarPack"align= "left" style="width:25%">
+      <a href="h" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlPG4TCCpD3WaJW2mtU3cdBH-QUHGJ0BpLnn1gORvNLmZ8Zg/viewform?embedded=true" width="300" height="220" frameborder="0" marginheight="0" marginwidth="0" padding-top="20px">Loading...</iframe></center>
+    </div>
+    <div class="alert alert-success alert dimissible fade in" id ="napkins"align= "left" style="width:25%">
+      <a href="h" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfs3Wk4mxsorCHY9dJBNPJ5pSOTm6ZXRGm57H5OGPo4c8FMgA/viewform?embedded=true" width="300" height="220" frameborder="0" marginheight="0" marginwidth="0" padding-top="20px">Loading...</iframe></center>
+    </div>
+    </center>
+  </div>
+
+<!-- fun facts survey -->
+  <div class="w3-container w3-padding-32" id="facts">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Fun Facts</h3>
+    <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScavibElM83dFjyUU9gSlZS9Ko6jsomYlJtv4lfU3prEXi4wg/viewform?embedded=true" width="500" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></center>
+  </div>
 
 <!--Games Section -->
   <div class="w3-container w3-padding-32" id="games">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Games</h3>
     <p> Click to play one of our games! </p>
+
+  <!--Mikayla's Scratch Game -->
+    <div id="scratchGame">
+      <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/237873486/?autostart=false" frameborder="0" allowfullscreen ></iframe>
+    </div>
 
 <!--Quiz Game-->
     <div id="firstButton">
@@ -194,12 +223,22 @@
         <img src="https://s8.postimg.cc/pxwhoggl1/statistics.png" alt="backgroundImg2" font-size=font-size="3em" width="250px" height="250px" border-radius="25px" box-shadow="0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)">
       </a>
     </div>
+  </div>
+
+<!--Quick Guide Section-->
+  <div class="w3-container w3-padding-32" id="quickguides">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Quick Guides</h3>
+<p> To print any of these quick guides: <a href= "https://docs.google.com/document/d/1GV49Fh_GC5nX_n3jHhIp8nQW7GPTQUNNdJMqKNiN9XE/edit?usp=sharing" target="_blank" >click here</a></p>
+    <img src="https://s8.postimg.cc/gy7ifbcrp/recycling_Decoder.png" id="decoder"length=75% width=75%></img>
+    <img src="https://s8.postimg.cc/flueqzp8l/YAY.png" id="Qguide" length=75% width=75%></img>
 
 
+  </div>
 
 <!--Maps Section -->
   <div class="w3-container w3-padding-32" id="maps">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Maps</h3>
+    <p> Use our maps to find nearby eco-friendly restaurants and recycling centers! </p>
 <!-- Map of Eco-Friendly Restaurants-->
        <center> <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1pHCoZuh5c7O3cyKXIvDpU61ErNfipCjt" width="750" height="590"></iframe> </center>
       <p>
@@ -214,51 +253,54 @@
   <div class="w3-row-padding w3-grayscale" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Us</h3>
 
-<!--Shreya-->
-    <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
-      <img src="earth.png" alt="Shreya" style="width:60%">
-      <h3>Shreya</h3>
-      <p class="w3-opacity" style="width:50%">Junior at Mission San Jose High School </p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><a href="https://www.linkedin.com/in/shreya-aggarwal-33409a167/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
-    </div></center>
 
-<!--Mikayla-->
-    <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
-      <img src="earth.png" alt="Mikayla" style="width:60%">
-      <h3>Mikayla</h3>
-      <p class="w3-opacity" style="width:50%">Senior at Aragon High School</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><a href="https://www.linkedin.com/in/mikayla-kaliski/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
-    </div></center>
+
 
 <!--Alyson-->
     <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
-      <img src="earth.png" alt="Alyson" style="width:60%">
+      <img src="https://s8.postimg.cc/i6zzesh9x/image.png" alt="Alyson" style="width:60%">
       <h3>Alyson</h3>
       <p class="w3-opacity" style="width:50%">Junior at Homestead High School</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p>I am interested in the field of web development. In my free time, I enjoy watching Netflix and going out with my friends. </p>
       <p><a href="https://www.linkedin.com/in/alyson-yi/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
+    </div></center>
+<!--Emily-->
+    <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
+      <img src="https://s8.postimg.cc/ae9bmd8lh/emily.png" alt="Emily" style="width:60%" align="middle">
+      <h3>Emily</h3>
+      <p class="w3-opacity" style="width:50%">Junior at Monta Vista High School</p>
+      <p>I am intrested in the field of UX/UI design. In my free time I like to bake, read, and play with my cat named Tigger.</p>
+      <p><a href="https://www.linkedin.com/in/emily-wong-341a99166/" target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
     </div></center>
 
 <!--Holly-->
     <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
-      <img src="earth.png" alt="Holly" style="width:60%" align="middle">
+      <img src="https://s8.postimg.cc/r20tp98md/image.png" alt="Holly" style="width:65%" align="middle">
       <h3>Holly</h3>
       <p class="w3-opacity" style="width:50%">Junior at Homestead High School</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p>I'm interested in software development. My hobbies are watching YouTube and photography.</p>
       <p><a href="https://www.linkedin.com/in/holly-hu-23609b167/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
     </div></center>
-
-<!--Emily-->
+<!--Mikayla-->
     <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
-      <img src="earth.png" alt="Emily" style="width:60%" align="middle">
-      <h3>Emily</h3>
-      <p class="w3-opacity" style="width:50%">Junior at Monta Vista High School</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><a href="https://www.linkedin.com/in/emily-wong-341a99166/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
+      <img src="https://s8.postimg.cc/c62ahg7fp/untitled-354-17.png" alt="Mikayla" style="width:60%">
+      <h3>Mikayla</h3>
+      <p class="w3-opacity" style="width:50%">Senior at Aragon High School</p>
+      <p>I am interested in Civil Engineering. Some of my hobbies include photography, hiking, coding, and watching movies.</p>
+      <p><a href="https://www.linkedin.com/in/mikayla-kaliski/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
+    </div></center>
+<!--Shreya-->
+    <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
+      <img src="https://s8.postimg.cc/41u6cmd9x/untitled-349-12.jpg" alt="Shreya" style="width:60%">
+      <h3>Shreya</h3>
+      <p class="w3-opacity" style="width:50%">Junior at Mission San Jose High School </p>
+      <p>I inspire to become a software engineer. My favorite pastimes are playing badminton and flute.</p>
+      <p><a href="https://www.linkedin.com/in/shreya-aggarwal-33409a167/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
     </div></center>
 
+
+
+  </div>
 </body>
 
 
@@ -267,40 +309,84 @@
 
 /*Read More Button Style */
 #readmore {
-  background-color: black;
+  /* background-color: light grey; */
   border: none;
-  color: white;
+  color: black;
   padding: 5px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 150px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   font-family: 'Roboto', sans-serif;
   cursor:pointer;
+}
 
+/*Scratch Game*/
+#scratchGame {
+  width: 44%;
+  border-radius: 100px;
+  float: left;
 }
 
 /*Quiz Button*/
 #firstButton {
-  width: 50%;
-  padding-left: 150px;
-  border-radius: 100px;
+  width: 28%;
+  /* padding-left: 150px; */
+  border-radius: 150px;
   float: left;
 
 }
 /*Statistics Quiz Button*/
 #secondButton {
-  width: 50%;
-  padding-left: 150px;
-  border-radius: 100px;
+  width: 28%;
+  /* padding-left: 150px; */
+  border-radius: 150px;
   float: left;
-
 }
 
 /*Read More button*/
 #more {display: none;}
+
+/* Pop quiz*/
+#popQuiz {
+  padding:20px;
+  align: center;
+}
+
+#hotChoc {
+  width: 28%;
+  float: left;
+}
+
+#utensils {
+  width: 28%;
+  float: left;
+}
+
+#sugarPack {
+  width: 28%;
+  float: left;
+}
+
+#napkins {
+  width: 28%;
+  float: left;
+}
+
+/* Quick Guides */
+#decoder {
+  width: 50%;
+  float: left;
+
+}
+
+#Qguide {
+  width: 50%;
+  float: left;
+}
+
 
 .table {
   display: table;
@@ -315,8 +401,6 @@
   padding: 30px;
   float: inherit;
   border-radius: 500px;
-
-
 }
 
 .container {
@@ -332,13 +416,14 @@
   display: block;
   width: 100%;
   height: auto;
+
 }
 
 }
 .li {
   font-family: 'Roboto', sans-serif;
-
 }
+
 .text {
   color: white;
   font-size: 20px;
@@ -355,7 +440,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
 }
 
 body {
@@ -369,11 +453,14 @@ body {
     width: 33%;
     padding: 10px;
     border-radius: 1000px;
+
+
 }
 
 .containerTab {
     padding: 20px;
     color: black;
+
 }
 
 /* Clear floats after the columns */
@@ -396,7 +483,6 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.1em;
   padding: 10px;
-
 }
 
 .h5{
@@ -425,11 +511,13 @@ body {
 /* First map */
 #map {
   border-radius: 20px;
+
 }
 
 /* Second map */
 #map2 {
   border-radius: 20px;
+
 }
 
 .w3-button {
@@ -442,8 +530,9 @@ body {
 
 #menu {
   border-radius: 100px;
-
 }
+
+
 </style>
 
 
