@@ -2,9 +2,11 @@
 <html>
 <title>Sorted Earth</title>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Favicon-->
+<link rel="shortcut icon" href="https://s8.postimg.cc/m1em2dlb9/imageedit_3_3404405083.png"/>
 
-<link rel="stylesheet" href="https://s8.postimg.cc/m4ya0y9ed/cool.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://s8.postimg.cc/m4ya0y9ed/cool.png"/>
 
 </head>
 <meta charset="UTF-8">
@@ -23,7 +25,7 @@
 <!-- Logo -->
 <div class="w3-top">
   <div id = "menu" class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <img src = "https://s8.postimg.cc/ps1mo3fgl/logo.png" width=230; height=60;> <a href="#home" class="w3-bar-item w3-button">
+    <img src = "https://s8.postimg.cc/ps1mo3fgl/logo.png" width=230; height=60;> <a href="#home" class="w3-bar-item w3-button" style="text-decoration:none;"></a>
 
 <!-- Menu Bar -->
     <div class="w3-right w3-hide-small">
@@ -39,7 +41,7 @@
 
 <!-- Header Picture -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="https://s8.postimg.cc/pfa8i0kd1/lisa.png" alt="Architecture" width="1500" height="800">
+  <img class="w3-image" src="https://s8.postimg.cc/54kxw0tgl/background.png" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"> </h1>
   </div>
@@ -53,14 +55,14 @@
     <h5><strong>Our Mission</strong></h5>
 
 <!--Read More Button -->
-    <p>We noticed that at any location, ranging from our schools, public parks, our parents’ companies, and even Amazon, the trash cans for various functions are treated the same. With the same items inside although they have very different functions.<span id="dots">..</span>
-      <span id="more">Our goal is to educate people on the consequences of sorting items incorrectly while providing them clear guidelines on where to place items. We hope this website will prevent you from ever having to stand awkwardly in front of the trash cans again, and having to impulsively make a random decision.
-        We want others to understand where to put  items without having to break a sweat, in addition, understand the power and impact on the environment you have just from where you decide to throw your post-lunch trash!</span></p>
+    <p>We noticed that at several locations, from public parks, schools, our parents’ companies, and even at Amazon, trash cans for various functions have the same items inside
+.<span id="dots">..</span>
+      <span id="more">Our goal is to inform you on how your short everyday decisions can impact the environment for many years to come.  We hope to achieve this by providing you with easy to digest information through clear guidelines, games,  and printable quick guides.  We hope you have fun on our website and by the end, feel like you are a true sorting expert!</span></p>
     <button onclick="myfunction()" id="readmore"> Read more </button>
     <h3 class="w3-border-bottom w3-border-white w3-padding-12 w3-light-grey w3-block w3-opacity"></h3>
 
 
-  <h6>Click on an image to learn more about each category.</h6>
+  <h4>Click on an image to learn more about each category.</h4>
 <!-- Three columns for Images -->
   <div class="row">
     <div class="column" onclick="openTab('b1');">
@@ -75,12 +77,12 @@
   </div>
 
 <!-- Full-width columns: (hidden by default) -->
-  <div id="b1" class="containerTab" style="display:none;background:#bcb4c4">
+  <div id="b1" class="containerTab" style="display:none;background:#cce6ff">
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
 <!--Composting Section-->
     <h2>Compost</h2>
-    <img src= "https://livegreenlansing.org/wp-content/uploads/2016/10/ScrapstoSoil_Graphic-2.png" width=400 height=400 align="right" border=10px>
+    <img src= "https://livegreenlansing.org/wp-content/uploads/2016/10/ScrapstoSoil_Graphic-2.png" id="compostcycle" width=425px height=400px align="right" border=10px>
     <h3> What is it? </h3>
     <ul>
       <p>Biodegradable: material capable of being broken down by bacteria or other living organisms</p>
@@ -92,24 +94,25 @@
           <li> Cooked Grains</li>
           <li> Coffee Grounds/Loose Leaf Tea</li>
           <li> Egg shells </li>
+          <li> Napkins (not containing grease) </li>
         </ul>
       <h4><li>Items that <b>ARE NOT</b> compostable:</li></h4>
       <ul>
-        <li>Meats, bones, fish, dairy</li>
+        <li>Meats, Bones, Fish, Dairy</li>
       </ul>
     </ul>
 
-    <h3><li><b>Golden Rule:</b> compost is almost anything that has been alive and can be broken down by bacteria or other living things (excluding cooked food)</li></h3>
+    <h3><b>Golden Rule:</b> compost is almost anything that has been alive and can be broken down by bacteria or other living things (excluding cooked food)</h3>
     <img src="https://s8.postimg.cc/6ykf4tjh1/imageedit_2_7929507803.png" align="center" border="10px" height="75%" width="75%" >
     <p> For a full list of compostable items: <a href= "https://www.smallfootprintfamily.com/100-things-you-can-compost" target="_blank" >click here</a></p>
 
   </div>
 
 <!--Recycling Section -->
-  <div id="b2" class="containerTab" style="display:none;background:#9eb6b8">
+  <div id="b2" class="containerTab" style="display:none;background:#cce5cc">
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
     <h2>Recycle</h2>
-    <img src= "http://www.cityofbellbrook.org/upload/page/0097/widgets/image/001712/How%20to%20Recycle%20-%20Rumpke%2005-16%202.png" width=303 height=555 align="right" border=50px>
+    <img src= "https://s8.postimg.cc/6zgmg76ed/ourcycle.png" id="recyclingcycle" width=600 height=455 align="right" padding="50px">
     <h3>What is it?</h3>
     <ul>
       <p>Turning waste into more useful and reusable material</p>
@@ -117,13 +120,13 @@
         <ul>
           <li>Plastic (bottles, containers)</li>
           <li>Cardboard</li>
-          <ul> <li>Cereal boxes, mail, magazines, newspaper </li></ul>
+          <ul> <li>Cereal boxes, Mail, Magazines, Newspaper </li></ul>
           <li>Metals</li>
           <ul><li>Cans</li></ul>
           <ul><li>Glass</li></ul>
-          <li>Food containers or jars</li>
-          <li>Soft drinks, beer bottles</li>
-          <li>Wine, liquior bottles</li>
+          <li>Food containers or Jars</li>
+          <li>Soft drinks, Beer bottles</li>
+          <li>Wine, Liquior bottles</li>
         </ul>
 
       <h4><li>Items that <b>ARE NOT</b> recyclable:</li></h4>
@@ -136,26 +139,22 @@
           <li>Pottery and ceramics</li>
         </ul>
 
-      <h3><li>Golden Rule:</li></h3>
-        <ul>
-          <li> ... </li>
-
-        </ul>
     </ul>
-    <img src="https://s8.postimg.cc/4v9zwq445/imageedit_1_2753698572.png" align="center" border="10px" height="68%" width="68%" padding-left=150px>
+    <img src="https://s8.postimg.cc/4v9zwq445/imageedit_1_2753698572.png" id="recycling" align="center" border="10px" height="68%" width="68%" padding-left=150px>
     <p>
     <p></p>
     </p>
   </div>
 
 <!--Trash Section -->
-  <div id="b3" class="containerTab" style="display:none;background:#e8d9c5">
+  <div id="b3" class="containerTab" style="display:none;background:#ffeedc">
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
     <h2>Trash</h2>
+    <img src= "https://s8.postimg.cc/p8dqzpd4l/trashcycle.png" id="trashcycle" align="right" width="27%" height="27%" padding-right="80px">
     <h3>What is it?</h3>
     <ul>
       <p>Non-biodegradable and non-recyclable waste</p>
-      <h4><li>Examples of trash:</li></h4>
+      <h4><li>Items that <b>ARE</b> trash:</li></h4>
           <ul>
             <li>Diapers</li>
             <li>Menstrual products</li>
@@ -165,51 +164,42 @@
             <li>Broken glass</li>
             <li>Animal feces</li>
           </ul>
-      <h4><li>Where does trash go?</li></h4>
-      <ul>
-        <p>Just over 52 percent of the country's garbage ends up in one of more than 3,000 active landfills scattered throughout the U.S.</p>
-        <img src= "http://transitionus.org/sites/default/files/Landfill-flickr.jpg" width=281.25; height=187.3125;>
+
+        <d><img src= "https://s8.postimg.cc/ej9pig27p/not.png" id="otherwaste"></d>
+
+
     </ul>
   </div>
 
-<!-- Pop Quiz Section -->
-  <div id=popQuiz>
-    <center>
-    <div class="alert alert-success alert dimissible fade in" id="hotChoc" align= "left" style="width:25%">
-      <a href="h" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcWP-QRsuwWRBDu8FenlTOwPH-8PgayqcFyBQ0su_r12U0oQ/viewform?embedded=true" width="300" height="220" frameborder="0" marginheight="0" marginwidth="0" padding-top="20px">Loading...</iframe></center>
-    </div>
-    <div class="alert alert-success alert dimissible fade in" id="utensils" align= "left" style="width:25%">
-      <a href="h" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2DqUGxU_haXwodhkB2na-g4YU2c4srwL0H5fHgCCjVTHfOQ/viewform?embedded=true" width="300" height="220" frameborder="0" marginheight="0" marginwidth="0" padding-top="20px">Loading...</iframe></center>
-    </div>
-    <div class="alert alert-success alert dimissible fade in" id="sugarPack"align= "left" style="width:25%">
-      <a href="h" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlPG4TCCpD3WaJW2mtU3cdBH-QUHGJ0BpLnn1gORvNLmZ8Zg/viewform?embedded=true" width="300" height="220" frameborder="0" marginheight="0" marginwidth="0" padding-top="20px">Loading...</iframe></center>
-    </div>
-    <div class="alert alert-success alert dimissible fade in" id ="napkins"align= "left" style="width:25%">
+<!-- fun facts with pop quiz -->
+  <div class="w3-container w3-padding-32">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Fun Facts</h3>
+
+    <!-- pop quiz -->
+    <div class="alert alert-success alert dimissible fade in" id ="napkins" align= "left" style="width:26%">
       <a href="h" class="close" data-dismiss="alert" aria-label="close">&times;</a>
       <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfs3Wk4mxsorCHY9dJBNPJ5pSOTm6ZXRGm57H5OGPo4c8FMgA/viewform?embedded=true" width="300" height="220" frameborder="0" marginheight="0" marginwidth="0" padding-top="20px">Loading...</iframe></center>
     </div>
-    </center>
+
+    <!-- fun facts survey -->
+
+
+    <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScavibElM83dFjyUU9gSlZS9Ko6jsomYlJtv4lfU3prEXi4wg/viewform?embedded=true" width="500" height="400" frameborder="0" marginheight="0" marginwidth="0" id="facts">Loading...</iframe></center>
+
   </div>
 
-<!-- fun facts survey -->
-  <div class="w3-container w3-padding-32" id="facts">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Fun Facts</h3>
-    <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScavibElM83dFjyUU9gSlZS9Ko6jsomYlJtv4lfU3prEXi4wg/viewform?embedded=true" width="500" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></center>
-  </div>
 
 <!--Games Section -->
   <div class="w3-container w3-padding-32" id="games">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Games</h3>
-    <p> Click to play one of our games! </p>
+    <h4> Click to play one of our games! </h4>
 
   <!--Mikayla's Scratch Game -->
     <div id="scratchGame">
       <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/237873486/?autostart=false" frameborder="0" allowfullscreen ></iframe>
-    </div>
 
+    <p> If the game doesn't show up, <a href="https://scratch.mit.edu/projects/237873486/#fullscreen" target="_blank">click here to play</a></p>
+  </div>
 <!--Quiz Game-->
     <div id="firstButton">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxZxb1Vyu1yhFsXesYWc758aK3b7aBHnvUQ8GJMC5UYKJonw/viewform?embedded=true" target="_blank" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">
@@ -223,12 +213,14 @@
         <img src="https://s8.postimg.cc/pxwhoggl1/statistics.png" alt="backgroundImg2" font-size=font-size="3em" width="250px" height="250px" border-radius="25px" box-shadow="0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)">
       </a>
     </div>
+
+
   </div>
 
 <!--Quick Guide Section-->
   <div class="w3-container w3-padding-32" id="quickguides">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Quick Guides</h3>
-<p> To print any of these quick guides: <a href= "https://docs.google.com/document/d/1GV49Fh_GC5nX_n3jHhIp8nQW7GPTQUNNdJMqKNiN9XE/edit?usp=sharing" target="_blank" >click here</a></p>
+<h4>To print any of these quick guides: <a href= "https://docs.google.com/document/d/1GV49Fh_GC5nX_n3jHhIp8nQW7GPTQUNNdJMqKNiN9XE/edit?usp=sharing" target="_blank" >click here</a></h4>
     <img src="https://s8.postimg.cc/gy7ifbcrp/recycling_Decoder.png" id="decoder"length=75% width=75%></img>
     <img src="https://s8.postimg.cc/flueqzp8l/YAY.png" id="Qguide" length=75% width=75%></img>
 
@@ -238,13 +230,26 @@
 <!--Maps Section -->
   <div class="w3-container w3-padding-32" id="maps">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Maps</h3>
-    <p> Use our maps to find nearby eco-friendly restaurants and recycling centers! </p>
+    <h4> Use our maps to find nearby eco-friendly restaurants and recycling centers! </h4>
+      <!-- pop quiz utensils -->
+      <div class="alert alert-success alert dimissible fade in" id="utensils" align= "left" style="width:25%">
+        <a href="h" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2DqUGxU_haXwodhkB2na-g4YU2c4srwL0H5fHgCCjVTHfOQ/viewform?embedded=true" width="300" height="220" frameborder="0" marginheight="0" marginwidth="0" padding-top="20px">Loading...</iframe></center>
+      </div>
+
 <!-- Map of Eco-Friendly Restaurants-->
-       <center> <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1pHCoZuh5c7O3cyKXIvDpU61ErNfipCjt" width="750" height="590"></iframe> </center>
+      <center> <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1pHCoZuh5c7O3cyKXIvDpU61ErNfipCjt" width="750" height="590"></iframe> </center>
       <p>
       </p>
       <p>
       </p>
+
+      <!-- pop quiz sugar packets-->
+      <div class="alert alert-success alert dimissible fade in" id="sugarPack" align= "left" style="width:25%">
+        <a href="h" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlPG4TCCpD3WaJW2mtU3cdBH-QUHGJ0BpLnn1gORvNLmZ8Zg/viewform?embedded=true" width="300" height="220" frameborder="0" marginheight="0" marginwidth="0" padding-top="20px">Loading...</iframe></center>
+      </div>
+
 <!-- Map of recycling centers -->
        <center> <iframe id= "map2" src="https://www.google.com/maps/d/u/0/embed?mid=1bYkVKBh57FDPF96hI04NnqL7-45nfrzl" width="750" height="590"></iframe> </center>
   </div>
@@ -254,26 +259,25 @@
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Us</h3>
 
 
-
-
-<!--Alyson-->
+    <!--Alyson-->
     <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
       <img src="https://s8.postimg.cc/i6zzesh9x/image.png" alt="Alyson" style="width:60%">
       <h3>Alyson</h3>
       <p class="w3-opacity" style="width:50%">Junior at Homestead High School</p>
-      <p>I am interested in the field of web development. In my free time, I enjoy watching Netflix and going out with my friends. </p>
+      <p>I am interested in software development. My hobbies include photography, NCIS, and boba tea.</p>
       <p><a href="https://www.linkedin.com/in/alyson-yi/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
     </div></center>
-<!--Emily-->
+
+    <!--Emily-->
     <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
       <img src="https://s8.postimg.cc/ae9bmd8lh/emily.png" alt="Emily" style="width:60%" align="middle">
       <h3>Emily</h3>
       <p class="w3-opacity" style="width:50%">Junior at Monta Vista High School</p>
-      <p>I am intrested in the field of UX/UI design. In my free time I like to bake, read, and play with my cat named Tigger.</p>
+      <p>I am interested in the field of UX/UI design. In my free time I like to bake, read, and play with my cat named Tigger.</p>
       <p><a href="https://www.linkedin.com/in/emily-wong-341a99166/" target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
     </div></center>
 
-<!--Holly-->
+    <!--Holly-->
     <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
       <img src="https://s8.postimg.cc/r20tp98md/image.png" alt="Holly" style="width:65%" align="middle">
       <h3>Holly</h3>
@@ -281,7 +285,8 @@
       <p>I'm interested in software development. My hobbies are watching YouTube and photography.</p>
       <p><a href="https://www.linkedin.com/in/holly-hu-23609b167/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
     </div></center>
-<!--Mikayla-->
+
+    <!--Mikayla-->
     <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
       <img src="https://s8.postimg.cc/c62ahg7fp/untitled-354-17.png" alt="Mikayla" style="width:60%">
       <h3>Mikayla</h3>
@@ -289,16 +294,15 @@
       <p>I am interested in Civil Engineering. Some of my hobbies include photography, hiking, coding, and watching movies.</p>
       <p><a href="https://www.linkedin.com/in/mikayla-kaliski/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
     </div></center>
-<!--Shreya-->
+
+    <!--Shreya-->
     <center><div class="w3-col l3 w3-margin-bottom" style="width:20%" font-family='Roboto', sans-serif>
-      <img src="https://s8.postimg.cc/41u6cmd9x/untitled-349-12.jpg" alt="Shreya" style="width:60%">
+      <img src="https://s8.postimg.cc/n6xfmjrzp/untitled-349-12.png" alt="Shreya" style="width:60%">
       <h3>Shreya</h3>
       <p class="w3-opacity" style="width:50%">Junior at Mission San Jose High School </p>
-      <p>I inspire to become a software engineer. My favorite pastimes are playing badminton and flute.</p>
+      <p>I aspire to become a software engineer. Some of my favorite pastimes are playing badminton and flute.</p>
       <p><a href="https://www.linkedin.com/in/shreya-aggarwal-33409a167/"target="_blank"<button class="w3-button w3-light-grey w3-block" style="width:50%">LinkedIn</button></a></p>
     </div></center>
-
-
 
   </div>
 </body>
@@ -355,22 +359,25 @@
   align: center;
 }
 
-#hotChoc {
+/* fun facts section with pop quiz */
+#napkins {
   width: 28%;
   float: left;
+  /* padding-left: 30px; */
 }
+
+#facts {
+  width: 42%;
+  float: center;
+}
+
 
 #utensils {
   width: 28%;
-  float: left;
+  float: right;
 }
 
 #sugarPack {
-  width: 28%;
-  float: left;
-}
-
-#napkins {
   width: 28%;
   float: left;
 }
@@ -379,7 +386,6 @@
 #decoder {
   width: 50%;
   float: left;
-
 }
 
 #Qguide {
@@ -387,6 +393,21 @@
   float: left;
 }
 
+#recycling {
+  padding-left: 50px;
+}
+
+#otherwaste {
+  padding-top: 20px;
+}
+
+#recyclingcycle {
+  padding-right: 100px;
+}
+
+#trashcycle {
+  padding-right: 100px;
+}
 
 .table {
   display: table;
@@ -416,7 +437,6 @@
   display: block;
   width: 100%;
   height: auto;
-
 }
 
 }
@@ -453,14 +473,11 @@ body {
     width: 33%;
     padding: 10px;
     border-radius: 1000px;
-
-
 }
 
 .containerTab {
     padding: 20px;
     color: black;
-
 }
 
 /* Clear floats after the columns */
@@ -490,22 +507,27 @@ body {
 
 }
 
+/* information section */
+/* compost */
 #b1 {
   font-family: 'Roboto', sans-serif;
   border-radius: 50px;
   padding-left: 30px;
 }
 
+/* recycle */
 #b2 {
   font-family: 'Roboto', sans-serif;
   border-radius: 50px;
   padding-left: 30px;
 }
 
+/* trash */
 #b3 {
   font-family: 'Roboto', sans-serif;
   border-radius: 50px;
   padding-left: 30px;
+=
 }
 
 /* First map */
